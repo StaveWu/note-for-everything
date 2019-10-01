@@ -15,14 +15,13 @@
 ### 根元素
 
 - Window：单页面窗口，也是默认的窗口
-
 - NavigationWindow：类似浏览器，与Window的区别是，多了一个导航栏
 
-![1569900843596](E:\note-repos\WPF.assets\1569900843596.png)
+![1569900843596](WPF.assets\1569900843596.png)
 
 - Page：类比网页，作为根元素的Source来使用。
 
-![1569901378701](E:\note-repos\WPF.assets\1569901378701.png)
+![1569901378701](WPF.assets\1569901378701.png)
 
 将NavigationWindow改为Window后，Source属性不能用，这样似乎说明Page只能用在NavigationWindow上。
 
@@ -30,7 +29,7 @@
 
 官网的定义：
 
-![1569901914729](E:\note-repos\WPF.assets\1569901914729.png)
+![1569901914729](WPF.assets\1569901914729.png)
 
 StackPanel：相当于javafx的HBox/VBox
 
@@ -43,7 +42,7 @@ Grid元素内嵌两部分内容：
 - Grid的Row、Column定义
 - 要放置的控件
 
-![1569907255317](E:\note-repos\WPF.assets\1569907255317.png)
+![1569907255317](WPF.assets\1569907255317.png)
 
 
 
@@ -51,11 +50,11 @@ Grid元素内嵌两部分内容：
 
 在App.xaml中定义如下：
 
-![1569906747440](E:\note-repos\WPF.assets\1569906747440.png)
+![1569906747440](WPF.assets\1569906747440.png)
 
 使用：
 
-![1569906831253](E:\note-repos\WPF.assets\1569906831253.png)
+![1569906831253](WPF.assets\1569906831253.png)
 
 所以上述Style写法对应css就是：
 
@@ -143,7 +142,7 @@ Grid.Resources：一种inline形式的DataSource包含两部分：
 
 绑定的方向有三个：
 
-![1569912042655](E:\note-repos\WPF.assets\1569912042655.png)
+![Diagram that shows the basic data binding model.](https://docs.microsoft.com/zh-cn/dotnet/desktop-wpf/data/media/data-binding-overview/basic-data-binding-diagram.png)
 
 设置方法：通过`Binding.Mode`属性改变。
 
@@ -235,17 +234,17 @@ public class ColorBrushConverter : IValueConverter
 
 第一种，借助DataContext：
 
-![1569918743796](E:\note-repos\WPF.assets\1569918743796.png)
+![1569918743796](WPF.assets\1569918743796.png)
 
 第二种，比较直接，如果控件的父节点的其他子节点没有要使用这个数据源的话，用这种会方便些：
 
-![1569918862266](E:\note-repos\WPF.assets\1569918862266.png)
+![1569918862266](WPF.assets\1569918862266.png)
 
 Q：上面绑定方法明确指定了绑定什么属性，假如想绑定整个类的所有属性，怎么做？
 
 A：只写一个{Binding}就好了，把Path省掉。
 
-![1569919267828](E:\note-repos\WPF.assets\1569919267828.png)
+![1569919267828](WPF.assets\1569919267828.png)
 
 #### 绑定验证
 
@@ -294,7 +293,7 @@ public class FutureDateRule : ValidationRule
 
 使用该Rule：
 
-![1569940985279](E:\note-repos\WPF.assets\1569940985279.png)
+![1569940985279](WPF.assets\1569940985279.png)
 
 Q：注意上面有个validationTemplate，哪来的？
 
