@@ -26,7 +26,7 @@
 
 Quora上有个问题可能对进程与CPU关系的理解有帮助：
 
-![1570447515863](C:\Users\wteng\AppData\Roaming\Typora\typora-user-images\1570447515863.png)
+![1570457570813](一个进程是否只对应一个CPU.assets/1570457570813.png)
 
 > Actually, it only runs two at any moment. It executes four. And your OS pushes that number to several thousands. Now how does that work? It depends on distinguishing running: actually running, being executed, and being active.
 >
